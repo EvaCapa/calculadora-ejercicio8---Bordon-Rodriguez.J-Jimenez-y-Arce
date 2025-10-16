@@ -1,3 +1,5 @@
+import math 
+
 def suma(a, b):
     return a + b
 
@@ -13,8 +15,27 @@ def division(a, b):
     else:
         return "No se puede dividir por cero"
 
-print("Calculadora básica")
-print("Suma:", suma(4, 2))
-print("Resta:", resta(4, 2))
-print("Multiplicación:", multiplicacion(4, 2))
-print("División:", division(4, 2))
+
+def potenciacion(a, b):
+    return a ** b
+
+def radicacion(a, b):
+    if a >= 0:
+        return a ** (1 / b)
+    else:
+        return "No se puede calcular la raíz de un número negativo"
+
+def porcentaje(a, b):
+    return (a * b) / 100
+
+num1 = 8
+num2 = 2
+
+print("Calculadora extendida")
+print("Suma:", suma(num1, num2))
+print("Resta:", resta(num1, num2))
+print("Multiplicación:", multiplicacion(num1, num2))
+print("División:", division(num1, num2))
+print("Potenciación:", potenciacion(num1, num2))
+print("Radicación:", radicacion(num1, num2))
+print("Porcentaje:", porcentaje(num1, num2))
